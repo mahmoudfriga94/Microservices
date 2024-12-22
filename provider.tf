@@ -5,7 +5,7 @@ provider "google" {
 
 terraform {
   backend "gcs" {
-    bucket = var.tf_state_bucket
+    bucket = "mfrigabucket"
     prefix = "terraform/state"
   }
 } 
