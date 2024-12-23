@@ -27,7 +27,7 @@ resource "google_compute_subnetwork" "mysubnet" {
 }
 
 resource "google_container_cluster" "mycluster" {
-  name = "cluster1"
+  name = "cluster2"
 
   location                 = "us-central1"
   enable_autopilot         = true
