@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: microservices 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: microservices
+  template:
+    metadata:
+      labels:
+        app: microservices 
+    spec:
+      containers:
+        - name: microservices 
+          image: gcr.io/carbon-zone-445515-b4/microservices
+          ports:
+          - containerPort: 5000
