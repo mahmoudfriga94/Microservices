@@ -42,6 +42,5 @@ resource "google_container_cluster" "mycluster" {
     cluster_secondary_range_name  = google_compute_subnetwork.mysubnet.secondary_ip_range[1].range_name
   }
 
-
   deletion_protection = false
 }
