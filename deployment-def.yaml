@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: microservices 
-          image: gcr.io/carbon-zone-445515-b4/microservices
+          image: us-central1-docker.pkg.dev/carbon-zone-445515-b4/microservices/microservices:task
           ports:
           - containerPort: 5000
